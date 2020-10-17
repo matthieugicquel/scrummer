@@ -262,7 +262,7 @@ const calculatePointsForList = list => {
     attributes: true
   });
 
-  titleDataConfiguration = getTitleDataConfiguration(settings);
+  const titleDataConfiguration = getTitleDataConfiguration(settings);
   const listData = insertDataAggregationInElement(
     list,
     '.list-card:not(.hide)',
@@ -274,7 +274,7 @@ const calculatePointsForList = list => {
 };
 
 const calculatePointsForBoard = () => {
-  titleDataConfiguration = getTitleDataConfiguration(settings);
+  const titleDataConfiguration = getTitleDataConfiguration(settings);
   insertDataAggregationInElement(
     document,
     '.list',
@@ -388,7 +388,7 @@ const setupWindowListener = callback => {
   });
 };
 
-Podium = {};
+const Podium = {};
 Podium.keydown = function(k) {
   let oEvent = document.createEvent('KeyboardEvent');
 

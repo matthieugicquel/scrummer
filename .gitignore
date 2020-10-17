@@ -1,6 +1,3 @@
 .DS_Store
 dist
-platform/safari/apple-intermediate.pem
-platform/safari/apple-root.pem
-platform/safari/cert.pem
-platform/safari/privatekey.pem
+node_modules

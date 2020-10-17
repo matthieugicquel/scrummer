@@ -1,0 +1,19 @@
+{
+  "name": "scrummer",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/matthieugicquel/scrummer.git",
+  "author": "Matthieu Gicquel <matthieug@hey.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -cw"
+  },
+  "devDependencies": {
+    "rollup": "^2.17.1",
+    "rollup-plugin-chrome-extension": "^3.4.0",
+    "rollup-plugin-empty-dir": "^1.0.4",
+    "rollup-plugin-zip": "^1.0.1"
+  }
+}
