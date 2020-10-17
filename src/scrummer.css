@@ -14,38 +14,20 @@
 
 .scrummer-points,
 .scrummer-picker-button {
-  background: #47bae0;
-  background: linear-gradient(
-    to bottom,
-    #47bae0 50%,
-    #4dbbe2 50%,
-    #33b5e0 50%
-  ); /* W3C */
-  border-radius: 5px;
+  background: #19acdd;
+  border-radius: 4px;
 }
 
 .scrummer-post-points,
 .scrummer-picker-post-button {
-  background: #81cae2;
-  background: linear-gradient(
-    to bottom,
-    #81cae2 50%,
-    #79c6e0 50%,
-    #6cc1dd 50%
-  ); /* W3C */
-  border-radius: 5px;
+  background: #7bc3db;
+  border-radius: 4px;
 }
 
 .scrummer-hour-points,
 .scrummer-picker-hour-button {
-  background: #ec4706;
-  background: linear-gradient(
-    to bottom,
-    #da9fe9 50%,
-    #da9fe9 50%,
-    #da9fe9 50%
-  ); /* W3C */
-  border-radius: 5px;
+  background: #da9fe9;
+  border-radius: 4px;
 }
 
 .scrummer-points,
@@ -60,7 +42,7 @@
 .js-list-header .scrummer-post-points,
 .js-list-header .scrummer-hour-points {
   float: left;
-  margin-top: 6px;
+  margin-top: 1px;
 }
 
 textarea.mod-list-name.list-header-name {
@@ -84,8 +66,11 @@ textarea.mod-list-name.list-header-name {
   color: #fff !important;
 }
 
-.scrummer-picker-button:hover {
-  color: #ccc !important;
+.scrummer-picker-button:hover,
+.scrummer-picker-post-button:hover,
+.scrummer-picker-hour-button:hover {
+  transition: opacity 0.2s ease-in;
+  opacity: 50%;
 }
 
 .scrummer-picker-post-button {
@@ -93,10 +78,6 @@ textarea.mod-list-name.list-header-name {
   padding: 3px 9px;
   margin-right: 5px;
   color: #fff !important;
-}
-
-.scrummer-picker-post-button:hover {
-  color: #ccc !important;
 }
 
 .scrummer-card-id.hide {
