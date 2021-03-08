@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <head></head>
-  <body style="width: 200px;">
+  <body>
     <label>
       <input type="checkbox" id="showCardNumbers" />
       Show Card Numbers
     </label>
-    <br />
     <label>
       <input type="checkbox" id="showStoryPoints" />
       Show Story Points
     </label>
-    <br />
     <label>
       <input type="checkbox" id="showPostPoints" />
       Show Post-Estimation Points
     </label>
-    <br />
     <label>
       <input type="checkbox" id="showHourPoints" />
       Show Timebox Points
     </label>
-    <br />
     <label>
       <input type="checkbox" id="showColumnTotals" />
       Show Column Totals
     </label>
-    <br />
     <label>
       <input type="checkbox" id="showBoardTotals" />
       Show Board Totals
     </label>
-    <br />
     <label>
       <input type="checkbox" id="showPicker" />
       Show Points Picker
     </label>
-    <p>Refresh Trello to apply changes.</p>
-    <p>
+    <p>Refresh Trello to apply changes</p>
       <script src="settings.js"></script>
-    </p>
   </body>
+  <style>
+    body {
+      width: 300px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      font-size: 14px
+    }
+    label {
+      display: block;
+      padding: 0.2em;
+    }
+    input {
+      margin: 0;
+      margin-right: 0.5em;
+    }
+    p {
+      text-align: center;
+      padding: 0 1em;
+    }
+  </style>
 </html>
