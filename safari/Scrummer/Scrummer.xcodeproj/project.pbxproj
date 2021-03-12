@@ -415,6 +415,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Scrummer Extension/Scrummer_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4HKDFUW4Y;
 				INFOPLIST_FILE = "Scrummer Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -434,6 +435,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Scrummer Extension/Scrummer_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4HKDFUW4Y;
 				INFOPLIST_FILE = "Scrummer Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,6 +459,7 @@
 				CODE_SIGN_ENTITLEMENTS = Scrummer/Scrummer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Z4HKDFUW4Y;
 				INFOPLIST_FILE = Scrummer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -478,6 +481,7 @@
 				CODE_SIGN_ENTITLEMENTS = Scrummer/Scrummer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Z4HKDFUW4Y;
 				INFOPLIST_FILE = Scrummer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
