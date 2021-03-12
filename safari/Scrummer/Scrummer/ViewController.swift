@@ -10,7 +10,7 @@ import SafariServices.SFSafariApplication
 import SafariServices.SFSafariExtensionManager
 
 let appName = "Scrummer"
-let extensionBundleIdentifier = "com.Scrummer.Scrummer.Extension"
+let extensionBundleIdentifier = "com.Scrummer.ScrummerSafari.Extension"
 
 class ViewController: NSViewController {
 
