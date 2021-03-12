@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		847EBC3025FC0A5B00CA6BEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EBC2F25FC0A5B00CA6BEE /* AppDelegate.swift */; };
+		847EBC3325FC0A5B00CA6BEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847EBC3125FC0A5B00CA6BEE /* Main.storyboard */; };
+		847EBC3525FC0A5B00CA6BEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EBC3425FC0A5B00CA6BEE /* ViewController.swift */; };
+		847EBC3725FC0A5B00CA6BEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847EBC3625FC0A5B00CA6BEE /* Assets.xcassets */; };
+		847EBC3E25FC0A5B00CA6BEE /* Scrummer Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 847EBC3D25FC0A5B00CA6BEE /* Scrummer Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		847EBC4325FC0A5B00CA6BEE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847EBC4225FC0A5B00CA6BEE /* Cocoa.framework */; };
+		847EBC4625FC0A5B00CA6BEE /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EBC4525FC0A5B00CA6BEE /* SafariWebExtensionHandler.swift */; };
+		847EBC5A25FC0A5C00CA6BEE /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 847EBC5325FC0A5C00CA6BEE /* popup.html */; };
+		847EBC5B25FC0A5C00CA6BEE /* scrummer.js in Resources */ = {isa = PBXBuildFile; fileRef = 847EBC5425FC0A5C00CA6BEE /* scrummer.js */; };
+		847EBC5C25FC0A5C00CA6BEE /* img in Resources */ = {isa = PBXBuildFile; fileRef = 847EBC5525FC0A5C00CA6BEE /* img */; };
+		847EBC5D25FC0A5C00CA6BEE /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 847EBC5625FC0A5C00CA6BEE /* manifest.json */; };
+		847EBC5E25FC0A5C00CA6BEE /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 847EBC5725FC0A5C00CA6BEE /* assets */; };
+		847EBC5F25FC0A5C00CA6BEE /* settings.js in Resources */ = {isa = PBXBuildFile; fileRef = 847EBC5825FC0A5C00CA6BEE /* settings.js */; };
+		847EBC6025FC0A5C00CA6BEE /* scrummer.css in Resources */ = {isa = PBXBuildFile; fileRef = 847EBC5925FC0A5C00CA6BEE /* scrummer.css */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		847EBC3F25FC0A5B00CA6BEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 847EBC2325FC0A5B00CA6BEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 847EBC3C25FC0A5B00CA6BEE;
+			remoteInfo = "Scrummer Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		847EBC4E25FC0A5C00CA6BEE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				847EBC3E25FC0A5B00CA6BEE /* Scrummer Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		847EBC2B25FC0A5B00CA6BEE /* Scrummer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrummer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		847EBC2E25FC0A5B00CA6BEE /* Scrummer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scrummer.entitlements; sourceTree = "<group>"; };
+		847EBC2F25FC0A5B00CA6BEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		847EBC3225FC0A5B00CA6BEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		847EBC3425FC0A5B00CA6BEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		847EBC3625FC0A5B00CA6BEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		847EBC3825FC0A5B00CA6BEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847EBC3D25FC0A5B00CA6BEE /* Scrummer Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Scrummer Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		847EBC4225FC0A5B00CA6BEE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		847EBC4525FC0A5B00CA6BEE /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		847EBC4725FC0A5B00CA6BEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847EBC4825FC0A5B00CA6BEE /* Scrummer_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scrummer_Extension.entitlements; sourceTree = "<group>"; };
+		847EBC5325FC0A5C00CA6BEE /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../../dist/prod/build/popup.html; sourceTree = "<group>"; };
+		847EBC5425FC0A5C00CA6BEE /* scrummer.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = scrummer.js; path = ../../../dist/prod/build/scrummer.js; sourceTree = "<group>"; };
+		847EBC5525FC0A5C00CA6BEE /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; name = img; path = ../../../dist/prod/build/img; sourceTree = "<group>"; };
+		847EBC5625FC0A5C00CA6BEE /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../dist/prod/build/manifest.json; sourceTree = "<group>"; };
+		847EBC5725FC0A5C00CA6BEE /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../../../dist/prod/build/assets; sourceTree = "<group>"; };
+		847EBC5825FC0A5C00CA6BEE /* settings.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = settings.js; path = ../../../dist/prod/build/settings.js; sourceTree = "<group>"; };
+		847EBC5925FC0A5C00CA6BEE /* scrummer.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = scrummer.css; path = ../../../dist/prod/build/scrummer.css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		847EBC2825FC0A5B00CA6BEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847EBC3A25FC0A5B00CA6BEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847EBC4325FC0A5B00CA6BEE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		847EBC2225FC0A5B00CA6BEE = {
+			isa = PBXGroup;
+			children = (
+				847EBC2D25FC0A5B00CA6BEE /* Scrummer */,
+				847EBC4425FC0A5B00CA6BEE /* Scrummer Extension */,
+				847EBC4125FC0A5B00CA6BEE /* Frameworks */,
+				847EBC2C25FC0A5B00CA6BEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		847EBC2C25FC0A5B00CA6BEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				847EBC2B25FC0A5B00CA6BEE /* Scrummer.app */,
+				847EBC3D25FC0A5B00CA6BEE /* Scrummer Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		847EBC2D25FC0A5B00CA6BEE /* Scrummer */ = {
+			isa = PBXGroup;
+			children = (
+				847EBC2E25FC0A5B00CA6BEE /* Scrummer.entitlements */,
+				847EBC2F25FC0A5B00CA6BEE /* AppDelegate.swift */,
+				847EBC3125FC0A5B00CA6BEE /* Main.storyboard */,
+				847EBC3425FC0A5B00CA6BEE /* ViewController.swift */,
+				847EBC3625FC0A5B00CA6BEE /* Assets.xcassets */,
+				847EBC3825FC0A5B00CA6BEE /* Info.plist */,
+			);
+			path = Scrummer;
+			sourceTree = "<group>";
+		};
+		847EBC4125FC0A5B00CA6BEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				847EBC4225FC0A5B00CA6BEE /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		847EBC4425FC0A5B00CA6BEE /* Scrummer Extension */ = {
+			isa = PBXGroup;
+			children = (
+				847EBC5225FC0A5C00CA6BEE /* Resources */,
+				847EBC4525FC0A5B00CA6BEE /* SafariWebExtensionHandler.swift */,
+				847EBC4725FC0A5B00CA6BEE /* Info.plist */,
+				847EBC4825FC0A5B00CA6BEE /* Scrummer_Extension.entitlements */,
+			);
+			path = "Scrummer Extension";
+			sourceTree = "<group>";
+		};
+		847EBC5225FC0A5C00CA6BEE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				847EBC5325FC0A5C00CA6BEE /* popup.html */,
+				847EBC5425FC0A5C00CA6BEE /* scrummer.js */,
+				847EBC5525FC0A5C00CA6BEE /* img */,
+				847EBC5625FC0A5C00CA6BEE /* manifest.json */,
+				847EBC5725FC0A5C00CA6BEE /* assets */,
+				847EBC5825FC0A5C00CA6BEE /* settings.js */,
+				847EBC5925FC0A5C00CA6BEE /* scrummer.css */,
+			);
+			name = Resources;
+			path = "Scrummer Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		847EBC2A25FC0A5B00CA6BEE /* Scrummer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847EBC4F25FC0A5C00CA6BEE /* Build configuration list for PBXNativeTarget "Scrummer" */;
+			buildPhases = (
+				847EBC2725FC0A5B00CA6BEE /* Sources */,
+				847EBC2825FC0A5B00CA6BEE /* Frameworks */,
+				847EBC2925FC0A5B00CA6BEE /* Resources */,
+				847EBC4E25FC0A5C00CA6BEE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				847EBC4025FC0A5B00CA6BEE /* PBXTargetDependency */,
+			);
+			name = Scrummer;
+			productName = Scrummer;
+			productReference = 847EBC2B25FC0A5B00CA6BEE /* Scrummer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		847EBC3C25FC0A5B00CA6BEE /* Scrummer Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847EBC4B25FC0A5C00CA6BEE /* Build configuration list for PBXNativeTarget "Scrummer Extension" */;
+			buildPhases = (
+				847EBC3925FC0A5B00CA6BEE /* Sources */,
+				847EBC3A25FC0A5B00CA6BEE /* Frameworks */,
+				847EBC3B25FC0A5B00CA6BEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Scrummer Extension";
+			productName = "Scrummer Extension";
+			productReference = 847EBC3D25FC0A5B00CA6BEE /* Scrummer Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		847EBC2325FC0A5B00CA6BEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					847EBC2A25FC0A5B00CA6BEE = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					847EBC3C25FC0A5B00CA6BEE = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 847EBC2625FC0A5B00CA6BEE /* Build configuration list for PBXProject "Scrummer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 847EBC2225FC0A5B00CA6BEE;
+			productRefGroup = 847EBC2C25FC0A5B00CA6BEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				847EBC2A25FC0A5B00CA6BEE /* Scrummer */,
+				847EBC3C25FC0A5B00CA6BEE /* Scrummer Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		847EBC2925FC0A5B00CA6BEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847EBC3725FC0A5B00CA6BEE /* Assets.xcassets in Resources */,
+				847EBC3325FC0A5B00CA6BEE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847EBC3B25FC0A5B00CA6BEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847EBC5E25FC0A5C00CA6BEE /* assets in Resources */,
+				847EBC5D25FC0A5C00CA6BEE /* manifest.json in Resources */,
+				847EBC5C25FC0A5C00CA6BEE /* img in Resources */,
+				847EBC5B25FC0A5C00CA6BEE /* scrummer.js in Resources */,
+				847EBC6025FC0A5C00CA6BEE /* scrummer.css in Resources */,
+				847EBC5A25FC0A5C00CA6BEE /* popup.html in Resources */,
+				847EBC5F25FC0A5C00CA6BEE /* settings.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		847EBC2725FC0A5B00CA6BEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847EBC3525FC0A5B00CA6BEE /* ViewController.swift in Sources */,
+				847EBC3025FC0A5B00CA6BEE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847EBC3925FC0A5B00CA6BEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847EBC4625FC0A5B00CA6BEE /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		847EBC4025FC0A5B00CA6BEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 847EBC3C25FC0A5B00CA6BEE /* Scrummer Extension */;
+			targetProxy = 847EBC3F25FC0A5B00CA6BEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		847EBC3125FC0A5B00CA6BEE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847EBC3225FC0A5B00CA6BEE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		847EBC4925FC0A5B00CA6BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		847EBC4A25FC0A5B00CA6BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		847EBC4C25FC0A5C00CA6BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Scrummer Extension/Scrummer_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Scrummer Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Scrummer.Scrummer.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		847EBC4D25FC0A5C00CA6BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Scrummer Extension/Scrummer_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Scrummer Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Scrummer.Scrummer.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		847EBC5025FC0A5C00CA6BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Scrummer/Scrummer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Scrummer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Scrummer.Scrummer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		847EBC5125FC0A5C00CA6BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Scrummer/Scrummer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Scrummer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Scrummer.Scrummer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		847EBC2625FC0A5B00CA6BEE /* Build configuration list for PBXProject "Scrummer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847EBC4925FC0A5B00CA6BEE /* Debug */,
+				847EBC4A25FC0A5B00CA6BEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847EBC4B25FC0A5C00CA6BEE /* Build configuration list for PBXNativeTarget "Scrummer Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847EBC4C25FC0A5C00CA6BEE /* Debug */,
+				847EBC4D25FC0A5C00CA6BEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847EBC4F25FC0A5C00CA6BEE /* Build configuration list for PBXNativeTarget "Scrummer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847EBC5025FC0A5C00CA6BEE /* Debug */,
+				847EBC5125FC0A5C00CA6BEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 847EBC2325FC0A5B00CA6BEE /* Project object */;
+}
